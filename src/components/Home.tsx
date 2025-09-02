@@ -1,4 +1,7 @@
 import Mission from './Mission';
+import AboutUs from './AboutUs';
+import Highlights from './Highlights';
+import Donation from './Donation';
 
 const Home = () => {
     return (
@@ -61,21 +64,7 @@ const Home = () => {
                                 </button>
                             </div>
 
-                            {/* Stats */}
-                            <div className="grid grid-cols-3 gap-8 pt-8">
-                                <div>
-                                    <div className="text-3xl font-bold text-green-600">25K+</div>
-                                    <div className="text-sm text-gray-500">Lives Empowered</div>
-                                </div>
-                                <div>
-                                    <div className="text-3xl font-bold text-blue-600">64</div>
-                                    <div className="text-sm text-gray-500">Districts Reached</div>
-                                </div>
-                                <div>
-                                    <div className="text-3xl font-bold text-orange-600">95%</div>
-                                    <div className="text-sm text-gray-500">Success Rate</div>
-                                </div>
-                            </div>
+
                         </div>
 
                         {/* Right side - Grid layout */}
@@ -122,6 +111,15 @@ const Home = () => {
 
             {/* Mission Section */}
             <Mission />
+            
+            {/* Who We Are Section */}
+            <AboutUs />
+            
+            {/* Highlights */}
+            <Highlights />
+            
+            {/* Donation Section */}
+            <Donation />
         </>
     );
 };
