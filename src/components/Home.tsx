@@ -2,6 +2,7 @@ import Mission from './Mission';
 import AboutUs from './AboutUs';
 import Highlights from './Highlights';
 import Donation from './Donation';
+import Footer from './Footer';
 
 const Home = () => {
     return (
@@ -120,6 +121,9 @@ const Home = () => {
             
             {/* Donation Section */}
             <Donation />
+            
+            {/* Footer */}
+            <Footer />
         </>
     );
 };
