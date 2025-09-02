@@ -101,9 +101,9 @@ const AboutUs = () => {
 
                         {/* Content */}
                         <div className="space-y-6">
-                            <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
+                            <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-relaxed">
                                 Transforming Lives Through
-                                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 leading-relaxed">
                                     Quality Education
                                 </span>
                             </h3>

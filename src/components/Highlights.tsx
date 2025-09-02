@@ -66,9 +66,9 @@ const Highlights = () => {
                         Our Impact
                     </div>
 
-                    <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                        Educational
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+                    <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-relaxed mb-6">
+                        {/* Educational */}
+                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600 leading-relaxed">
                             Highlights
                         </span>
                     </h2>
