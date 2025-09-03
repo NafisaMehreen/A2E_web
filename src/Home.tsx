@@ -82,18 +82,19 @@ const Home = () => {
 
                             {/* Main heading */}
                             <div className="space-y-2">
-                                <h1 className="text-2xl lg:text-6xl text-gray-900 leading-tight comfortaa-bold">
-                                    Investing in
-                                    <span className="block" style={{ color: '#0a528e' }}>
-                                        Humanity,
-                                    </span>
-                                    <span className="block">
-                                        Empowering Lives
-                                    </span>
-                                    <span className="block" style={{ color: '#0a528e' }}>
-                                        in Bangladesh
-                                    </span>
-                                </h1>
+                            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                                Investing in
+                                <span className="block text-[#0a528e]">
+                                 Humanity,
+                                </span>
+                                <span className="block">
+                                Empowering Lives
+                                </span>
+                                <span className="block text-[#0a528e]">
+                                in Bangladesh
+                                </span>
+                            </h1>
+
 
                                 <p className="text-xl lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
                                     A2E is dedicated to transforming lives through quality education,
