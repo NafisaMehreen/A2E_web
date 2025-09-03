@@ -66,7 +66,7 @@ const Highlights = () => {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl text-gray-800 leading-tight mb-4 comfortaa-bold" style={{ color: '#0a528e' }}>
-                        Highlights
+                        What We Do
                     </h2>
                     <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#0a528e' }}></div>
 

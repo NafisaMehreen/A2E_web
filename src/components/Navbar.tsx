@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center group">
               <div className="relative">
-                <img src="/Education logo.svg" alt="Access to Education Logo" className="w-16 h-16 mr-4 transition-transform group-hover:scale-110"/>
+                <img src="/Education logo.svg" alt="Access to Education Logo" className="w-16 h-16 mr-4 transition-transform group-hover:scale-110" />
                 <div className="absolute -inset-2 bg-blue-100 rounded-full opacity-0 group-hover:opacity-20 transition-opacity"></div>
               </div>
               <div>
@@ -23,20 +23,20 @@ const Navbar = () => {
 
           {/* Center Navigation - Hidden on mobile */}
           <div className="hidden md:flex items-center space-x-8">
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
               ABOUT US
             </a>
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
               GALLERY
             </a>
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
               NEWS
@@ -76,20 +76,20 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col space-y-2">
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 ABOUT US
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 GALLERY
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 NEWS
