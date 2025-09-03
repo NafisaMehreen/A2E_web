@@ -62,16 +62,13 @@ const Highlights = () => {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                        Our Impact
+
                     </div>
 
-                    <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-relaxed mb-6">
-                        {/* Educational */}
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600 leading-relaxed">
-                            Highlights
-                        </span>
+                    <h2 className="text-4xl md:text-5xl text-gray-800 leading-tight mb-4 comfortaa-bold" style={{ color: '#0a528e' }}>
+                        Highlights
                     </h2>
+                    <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#0a528e' }}></div>
 
                     <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         Discover our comprehensive educational initiatives that are transforming lives across Bangladesh.

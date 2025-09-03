@@ -6,12 +6,12 @@ const MissionsSection = () => {
     const [hoveredImage, setHoveredImage] = useState<number | null>(null)
 
     return (
-        <section className="pt-0 pb-12 bg-white">
+        <section className="pt-20 pb-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl text-gray-800 comfortaa-bold mb-4">Our Mission</h2>
-                    <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+                    <div className="w-24 h-1 mx-auto" style={{ backgroundColor: '#0a528e' }}></div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">

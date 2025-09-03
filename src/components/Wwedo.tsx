@@ -30,9 +30,10 @@ const HighlightsSection = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl text-gray-800 leading-tight mb-6 comfortaa-light">
+                    <h2 className="text-4xl md:text-5xl text-gray-800 leading-tight mb-4 comfortaa-bold" style={{ color: '#0a528e' }}>
                         What We Do
                     </h2>
+                    <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#0a528e' }}></div>
                     <p className="text-xl text-gray-600 leading-relaxed comfortaa-regular max-w-3xl mx-auto">
                         At Access To Education, we turn dreams into possibilities. Through scholarships, mentorship,
                         and community support, we empower students to unlock their full potential.
@@ -50,12 +51,6 @@ const HighlightsSection = () => {
                                     alt={highlight.title}
                                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 />
-                                {/* Category Badge */}
-                                <div className="absolute top-4 left-4">
-                                    <span className={`${highlight.categoryColor} text-white px-3 py-1 rounded-full text-sm comfortaa-medium`}>
-                                        {highlight.category}
-                                    </span>
-                                </div>
                                 {/* Gradient Overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>
@@ -75,7 +70,7 @@ const HighlightsSection = () => {
 
                 {/* View More Button */}
                 <div className="text-center">
-                    <button className="bg-blue-500 text-white px-8 py-4 rounded-full text-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105 comfortaa-medium inline-flex items-center group">
+                    <button className="text-white px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 comfortaa-medium inline-flex items-center group" style={{ backgroundColor: '#0a528e' }}>
                         View More Stories
                         <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
