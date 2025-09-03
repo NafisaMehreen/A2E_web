@@ -24,17 +24,17 @@ const AboutUs = () => {
                                 130+
                             </span>
                         </div>
-                        
+
                         {/* Label */}
                         <h3 className="text-xl font-semibold text-gray-900 mb-2">
                             Students Supported
                         </h3>
-                        
+
                         {/* Description */}
                         <p className="text-gray-600 text-sm leading-relaxed">
                             Across all our active programs
                         </p>
-                        
+
                         {/* Decorative line */}
                         <div className="mt-4 mx-auto w-12 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#0a528e' }}></div>
                     </div>
@@ -46,17 +46,17 @@ const AboutUs = () => {
                                 6
                             </span>
                         </div>
-                        
+
                         {/* Label */}
                         <h3 className="text-xl font-semibold text-gray-900 mb-2">
                             Active Programs
                         </h3>
-                        
+
                         {/* Description */}
                         <p className="text-gray-600 text-sm leading-relaxed">
                             Comprehensive educational initiatives
                         </p>
-                        
+
                         {/* Decorative line */}
                         <div className="mt-4 mx-auto w-12 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#0a528e' }}></div>
                     </div>
@@ -68,17 +68,17 @@ const AboutUs = () => {
                                 15+
                             </span>
                         </div>
-                        
+
                         {/* Label */}
                         <h3 className="text-xl font-semibold text-gray-900 mb-2">
                             Years of Impact
                         </h3>
-                        
+
                         {/* Description */}
                         <p className="text-gray-600 text-sm leading-relaxed">
                             Transforming lives through education
                         </p>
-                        
+
                         {/* Decorative line */}
                         <div className="mt-4 mx-auto w-12 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#0a528e' }}></div>
                     </div>
@@ -90,17 +90,17 @@ const AboutUs = () => {
                                 100%
                             </span>
                         </div>
-                        
+
                         {/* Label */}
                         <h3 className="text-xl font-semibold text-gray-900 mb-2">
                             Commitment
                         </h3>
-                        
+
                         {/* Description */}
                         <p className="text-gray-600 text-sm leading-relaxed">
                             To educational excellence
                         </p>
-                        
+
                         {/* Decorative line */}
                         <div className="mt-4 mx-auto w-12 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#0a528e' }}></div>
                     </div>
