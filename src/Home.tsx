@@ -1,4 +1,5 @@
 
+import Navbar from './components/Navbar';
 import Mission from './components/Mission';
 import AboutUs from './components/AboutUs';
 import Wwedo from './components/Wwedo';
@@ -9,6 +10,7 @@ import Footer from './components/Footer';
 const Home = () => {
     return (
         <>
+            <Navbar />
             {/* Hero Section */}
             <div className="relative min-h-[90vh] bg-gradient-to-br from-orange-50 via-white to-blue-50 overflow-hidden">
                 {/* Mobile Background Image */}

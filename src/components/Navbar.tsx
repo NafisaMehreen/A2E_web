@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Left side - Logo */}
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center group">
+            <Link to="/" className="flex-shrink-0 flex items-center group">
               <div className="relative">
                 <img src="/Education logo.svg" alt="Access to Education Logo" className="w-16 h-16 mr-4 transition-transform group-hover:scale-110" />
                 <div className="absolute -inset-2 bg-blue-100 rounded-full opacity-0 group-hover:opacity-20 transition-opacity"></div>
@@ -18,17 +19,17 @@ const Navbar = () => {
                 <span className="text-2xl text-gray-800 comfortaa-bold leading-tight">Access2Edu</span>
                 <p className="text-xs text-blue-600 comfortaa-regular -mt-1">Opening Doors to Brighter Futures</p>
               </div>
-            </div>
+            </Link>
           </div>
 
           {/* Center Navigation - Hidden on mobile */}
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#"
+            <Link
+              to="/about"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
               ABOUT US
-            </a>
+            </Link>
             <a
               href="#"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -76,12 +77,12 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col space-y-2">
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 ABOUT US
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
