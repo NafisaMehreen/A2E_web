@@ -16,57 +16,93 @@ const AboutUs = () => {
                 </div>
 
                 {/* Statistics Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 mt-16">
-                    {/* Current Students Supported */}
-                    <div className="text-center">
-                        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg" style={{ backgroundColor: '#0a528e' }}>
-                            <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
-                            </svg>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <div className="text-center group">
+                        {/* Large Number */}
+                        <div className="mb-4">
+                            <span className="text-6xl lg:text-7xl font-bold comfortaa-bold" style={{ color: '#0a528e' }}>
+                                130+
+                            </span>
                         </div>
-                        <div className="text-3xl lg:text-4xl text-gray-900 mb-2 comfortaa-bold">130+</div>
-                        <p className="text-gray-600 text-sm leading-relaxed comfortaa-regular">
-                            students currently supported through our active educational programs in 2025
+                        
+                        {/* Label */}
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                            Students Supported
+                        </h3>
+                        
+                        {/* Description */}
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            Across all our active programs
                         </p>
+                        
+                        {/* Decorative line */}
+                        <div className="mt-4 mx-auto w-12 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#0a528e' }}></div>
                     </div>
 
-                    {/* Active Programs */}
-                    <div className="text-center">
-                        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg" style={{ backgroundColor: '#0a528e' }}>
-                            <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                    <div className="text-center group">
+                        {/* Large Number */}
+                        <div className="mb-4">
+                            <span className="text-6xl lg:text-7xl font-bold comfortaa-bold" style={{ color: '#0a528e' }}>
+                                6
+                            </span>
                         </div>
-                        <div className="text-3xl lg:text-4xl text-gray-900 mb-2 comfortaa-bold">6</div>
-                        <p className="text-gray-600 text-sm leading-relaxed comfortaa-regular">
-                            active educational programs providing comprehensive support and opportunities
+                        
+                        {/* Label */}
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                            Active Programs
+                        </h3>
+                        
+                        {/* Description */}
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            Comprehensive educational initiatives
                         </p>
+                        
+                        {/* Decorative line */}
+                        <div className="mt-4 mx-auto w-12 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#0a528e' }}></div>
                     </div>
 
-                    {/* School Retention Rate */}
-                    <div className="text-center">
-                        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg" style={{ backgroundColor: '#0a528e' }}>
-                            <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                            </svg>
+                    <div className="text-center group">
+                        {/* Large Number */}
+                        <div className="mb-4">
+                            <span className="text-6xl lg:text-7xl font-bold comfortaa-bold" style={{ color: '#0a528e' }}>
+                                15+
+                            </span>
                         </div>
-                        <div className="text-3xl lg:text-4xl text-gray-900 mb-2 comfortaa-bold">85%</div>
-                        <p className="text-gray-600 text-sm leading-relaxed comfortaa-regular">
-                            school retention rates achieved through our educational support and intervention programs
+                        
+                        {/* Label */}
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                            Years of Impact
+                        </h3>
+                        
+                        {/* Description */}
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            Transforming lives through education
                         </p>
+                        
+                        {/* Decorative line */}
+                        <div className="mt-4 mx-auto w-12 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#0a528e' }}></div>
                     </div>
 
-                    {/* Commitment Level */}
-                    <div className="text-center">
-                        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg" style={{ backgroundColor: '#0a528e' }}>
-                            <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.5 7H16c-.8 0-1.5.7-1.5 1.5v6c0 .8.7 1.5 1.5 1.5h1v6h3zM12.5 11.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5zM5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm2 16v-7H9V9c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v6H1.5v7h6z" />
-                            </svg>
+                    <div className="text-center group">
+                        {/* Large Number */}
+                        <div className="mb-4">
+                            <span className="text-6xl lg:text-7xl font-bold comfortaa-bold" style={{ color: '#0a528e' }}>
+                                100%
+                            </span>
                         </div>
-                        <div className="text-3xl lg:text-4xl text-gray-900 mb-2 comfortaa-bold">100%</div>
-                        <p className="text-gray-600 text-sm leading-relaxed comfortaa-regular">
-                            commitment to transforming lives and creating sustainable educational opportunities
+                        
+                        {/* Label */}
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                            Commitment
+                        </h3>
+                        
+                        {/* Description */}
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            To educational excellence
                         </p>
+                        
+                        {/* Decorative line */}
+                        <div className="mt-4 mx-auto w-12 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#0a528e' }}></div>
                     </div>
                 </div>
 
