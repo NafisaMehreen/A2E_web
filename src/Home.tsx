@@ -1,9 +1,10 @@
-import React from 'react'
-import Mission from './src/components/Mission';
-import AboutUs from './src/components/AboutUs';
-import Highlights from './src/components/Highlights';
-import Donation from './src/components/Donation';
-import Footer from './src/components/Footer';
+
+import Mission from './components/Mission';
+import AboutUs from './components/AboutUs';
+import Wwedo from './components/Wwedo';
+import Highlights from './components/Highlights';
+import Donation from './components/Donation';
+import Footer from './components/Footer';
 
 const Home = () => {
     return (
@@ -86,13 +87,23 @@ const Home = () => {
                             <div className="space-y-6">
                                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                                     Investing in
-                                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
+                                    <span
+                                        className="block text-transparent bg-clip-text leading-tight"
+                                        style={{
+                                            backgroundImage: `linear-gradient(to right, #0a528e, #0a748e)`
+                                        }}
+                                    >
                                         Humanity,
                                     </span>
                                     <span className="block">
                                         Empowering Lives
                                     </span>
-                                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
+                                    <span
+                                        className="block text-transparent bg-clip-text leading-tight"
+                                        style={{
+                                            backgroundImage: `linear-gradient(to right, #0a748e, #0a528e)`
+                                        }}
+                                    >
                                         in Bangladesh
                                     </span>
                                 </h1>
@@ -102,14 +113,6 @@ const Home = () => {
                                     creating opportunities for every Bangladeshi to reach their full potential
                                     and contribute to our nation's bright future.
                                 </p>
-
-                                {/* Mission statement highlight */}
-                                <div className="bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-green-500 p-6 rounded-r-xl">
-                                    <p className="text-lg font-medium text-gray-800 italic">
-                                        "Investing in Humanity, Empowering Lives in Bangladesh"
-                                    </p>
-                                    <p className="text-sm text-gray-600 mt-2">— Our Mission Statement</p>
-                                </div>
                             </div>
 
                             {/* CTA Button */}
@@ -131,6 +134,9 @@ const Home = () => {
 
             {/* Who We Are Section */}
             <AboutUs />
+
+            {/* What We Do Section */}
+            <Wwedo />
 
             {/* Highlights */}
             <Highlights />
