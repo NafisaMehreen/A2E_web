@@ -28,19 +28,25 @@ const Navbar = () => {
               to="/about"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
-              ABOUT US
+              About Us
             </Link>
             <a
               href="#"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
-              GALLERY
+              Our Programs
             </a>
             <a
               href="#"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
-              NEWS
+              Success Stories
+            </a>
+            <a
+              href="#"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+            >
+              Blog
             </a>
           </div>
 

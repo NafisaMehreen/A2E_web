@@ -130,7 +130,7 @@ const Home = () => {
             <Highlights />
 
             {/* Donation Section */}
-            <Donation />
+            {/* <Donation /> */}
 
             {/* Footer */}
             <Footer />
