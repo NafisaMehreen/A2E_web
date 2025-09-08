@@ -4,7 +4,7 @@ import Mission from './components/Mission';
 import AboutUs from './components/AboutUs';
 import Wwedo from './components/Wwedo';
 import Highlights from './components/Highlights';
-import Donation from './components/Donation';
+// import Donation from './components/Donation';
 import Footer from './components/Footer';
 
 const Home = () => {

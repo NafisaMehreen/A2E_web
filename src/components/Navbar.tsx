@@ -42,12 +42,12 @@ const Navbar = () => {
             >
               Success Stories
             </a>
-            <a
-              href="#"
+            <Link
+              to="/blog"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
               Blog
-            </a>
+            </Link>
           </div>
 
           {/* Right side - Donation Button */}

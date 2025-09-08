@@ -31,7 +31,7 @@ const HighlightsSection = () => {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl text-gray-800 leading-tight mb-4 comfortaa-bold" style={{ color: '#0a528e' }}>
-                        Our Students
+                        Our Stories
                     </h2>
                     <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#0a528e' }}></div>
                     <p className="text-xl text-gray-600 leading-relaxed comfortaa-regular max-w-3xl mx-auto">
