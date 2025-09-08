@@ -6,6 +6,7 @@ export type Post = {
     author?: string;
     excerpt: string;
     image?: string;
+    content?: string;
 };
    
 const mockDelay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -19,6 +20,20 @@ const seedPosts: Post[] = [
         author: 'A2E Team',
         excerpt: 'A new nationwide scholarship initiative will support 200+ students with tuition, mentorship and resources to thrive.',
         image: '/ht1.jpg',
+        content: `We are launching a nationwide scholarship program to support more than 200 students across Bangladesh.
+
+This initiative provides tuition assistance, mentorship, learning materials, and community support to ensure students not only enroll but also complete their education. The program prioritizes learners from underserved communities and focuses on long-term outcomes such as graduation rates and career readiness.
+
+Key components:
+- Tuition support tailored to family needs
+- One-to-one mentorship and peer circles
+- Access to digital learning resources
+- Periodic skills workshops and counseling
+
+How it works:
+Applications are evaluated based on need, potential, and community recommendations. Selected scholars will be matched with mentors and receive support throughout the academic year. We will publish periodic updates and impact stories as the program scales.
+
+If you’d like to nominate a student or partner with us, please reach out via our contact page.`,
     },
     {
         id: '2',
@@ -53,6 +68,12 @@ export const blogApi = {
     async listPosts(): Promise<{ posts: Post[] }> {
         await mockDelay(300);
         return { posts: seedPosts };
+    },
+    async getPost(id: string): Promise<{ post: Post } | { error: string }> {
+        await mockDelay(200);
+        const post = seedPosts.find(p => p.id === id);
+        if (!post) return { error: 'Not found' };
+        return { post };
     },
 };
 

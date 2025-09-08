@@ -61,9 +61,15 @@ const Blog = () => {
                                             <p className="text-gray-500 text-sm mt-2">{post.date}</p>
                                             <p className="text-gray-700 mt-4">{post.excerpt}</p>
                                             <div className="mt-6">
-                                                <a href="#" className="inline-block text-white px-5 py-2 rounded-md" style={{ backgroundColor: '#0a528e' }}>
-                                                    Read More
-                                                </a>
+                                                {post.id === '1' ? (
+                                                    <a href={`/blog/${post.id}`} className="inline-block text-white px-5 py-2 rounded-md" style={{ backgroundColor: '#0a528e' }}>
+                                                        Read More
+                                                    </a>
+                                                ) : (
+                                                    <a href="#" className="inline-block text-white px-5 py-2 rounded-md opacity-70 cursor-not-allowed" style={{ backgroundColor: '#0a528e' }}>
+                                                        Read More
+                                                    </a>
+                                                )}
                                             </div>
                                         </div>
                                     </article>
