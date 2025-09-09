@@ -95,12 +95,12 @@ const Navbar = () => {
               >
                 GALLERY
               </a>
-              <a
-                href="#"
+              <Link
+                to="/blog"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
-                NEWS
-              </a>
+                BLOG
+              </Link>
               <div className="flex justify-center px-3 py-2 border-t border-gray-200 mt-2 pt-4">
                 <button className="text-white px-4 py-2 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg" style={{ backgroundColor: '#0a528e' }}>
                   Donate Now ❤️

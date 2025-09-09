@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { blogApi, type Post } from '../model/Blog';
@@ -26,16 +27,14 @@ const Blog = () => {
         <>
             <Navbar />
             <main className="bg-white">
-                {/* Genesis-style page header */}
-                <section className="bg-gray-100 border-b">
-                    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 text-center">Blog</h1>
+                <section className="bg-gray-50 border-b">
+                    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                        <h1 className="text-3xl md:text-4xl font-bold text-gray-900">Blog</h1>
                     </div>
                 </section>
 
-                {/* Single-column post list */}
                 <section className="py-10">
-                    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                         {loading && (
                             <div className="py-20 text-center text-gray-500">Loading posts…</div>
                         )}
@@ -44,32 +43,31 @@ const Blog = () => {
                         )}
 
                         {!loading && !error && posts.length === 0 && (
-                            <div className="py-10 text-center text-gray-600">No posts found</div>
+                            <div className="text-center text-gray-500">No posts found</div>
                         )}
 
-                        {!loading && !error && posts.length > 0 && (
-                            <div className="space-y-10">
+                        {!loading && !error && (
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {posts.map((post) => (
-                                    <article key={post.id} className="border rounded-lg overflow-hidden bg-white">
-                                        {post.image && (
-                                            <div className="w-full aspect-[16/9] bg-gray-100">
+                                    <article key={post.id} className="bg-white border rounded-2xl overflow-hidden flex flex-col">
+                                        <div className="relative aspect-[4/3] bg-gray-100">
+                                            {post.image ? (
                                                 <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
-                                            </div>
-                                        )}
-                                        <div className="p-6">
-                                            <h2 className="text-2xl font-semibold text-gray-900">{post.title}</h2>
-                                            <p className="text-gray-500 text-sm mt-2">{post.date}</p>
-                                            <p className="text-gray-700 mt-4">{post.excerpt}</p>
-                                            <div className="mt-6">
-                                                {post.id === '1' ? (
-                                                    <a href={`/blog/${post.id}`} className="inline-block text-white px-5 py-2 rounded-md" style={{ backgroundColor: '#0a528e' }}>
-                                                        Read More
-                                                    </a>
-                                                ) : (
-                                                    <a href="#" className="inline-block text-white px-5 py-2 rounded-md opacity-70 cursor-not-allowed" style={{ backgroundColor: '#0a528e' }}>
-                                                        Read More
-                                                    </a>
-                                                )}
+                                            ) : (
+                                                <div className="w-full h-full flex items-center justify-center text-gray-400">No image</div>
+                                            )}
+                                        </div>
+                                        <div className="p-5 flex flex-col gap-2 flex-1">
+                                            <h2 className="text-xl font-semibold text-gray-900">{post.title}</h2>
+                                            <p className="text-gray-500 text-sm">{post.date}{post.author ? ` • ${post.author}` : ''}</p>
+                                            <p className="text-gray-700">{post.excerpt}</p>
+                                            <div className="mt-auto pt-3">
+                                                <Link
+                                                    to={`/blog/${post.id}`}
+                                                    className="inline-block text-blue-600 hover:text-blue-700 font-medium"
+                                                >
+                                                    Read More
+                                                </Link>
                                             </div>
                                         </div>
                                     </article>
