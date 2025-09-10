@@ -3,10 +3,10 @@ import Footer from '../components/Footer';
 
 const stories = [
   {
-    id: 'binta',
-    name: 'Binta',
-    tagline: 'She struggled to feed her family. Now she owns a farm.',
-    image: '/ht1.jpg'
+    id: 'Rahat',
+    name: 'Rahat',
+    tagline: 'Abandoned by his family, now a bright student.',
+    image: '/Rahat.png'
   },
   {
     id: 'haseena',
@@ -20,24 +20,7 @@ const stories = [
     tagline: 'From factory work to dreaming of becoming a doctor.',
     image: '/ht3.jpg'
   },
-  {
-    id: 'neneh',
-    name: 'Neneh',
-    tagline: "Left the mines, back in school with support.",
-    image: '/students.jpg'
-  },
-  {
-    id: 'tabu',
-    name: 'Tabu Njie',
-    tagline: 'We marched so women can own the land they work.',
-    image: '/lots.jpg'
-  },
-  {
-    id: 'hok',
-    name: 'Hok & Sienglee',
-    tagline: 'From drought to community leadership.',
-    image: '/lots2.jpg'
-  }
+  
 ];
 
 export default function Success() {

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { blogApi, type Post } from '../model/Blog';
+
 
 const BlogDetail = () => {
     const { id } = useParams();
