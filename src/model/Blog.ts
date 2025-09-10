@@ -64,49 +64,16 @@ If you’d like to nominate a student or partner with us, please reach out via o
     },
 ];
 
-const STORAGE_KEY = 'a2e_posts';
-
-const readStoredPosts = (): Post[] => {
-    try {
-        const raw = typeof window !== 'undefined' ? window.localStorage.getItem(STORAGE_KEY) : null;
-        if (!raw) return [];
-        const parsed = JSON.parse(raw);
-        if (!Array.isArray(parsed)) return [];
-        return parsed as Post[];
-    } catch {
-        return [];
-    }
-};
-
-const writeStoredPosts = (posts: Post[]): void => {
-    try {
-        if (typeof window !== 'undefined') {
-            window.localStorage.setItem(STORAGE_KEY, JSON.stringify(posts));
-        }
-    } catch {
-        // no-op
-    }
-};
-
 export const blogApi = {
     async listPosts(): Promise<{ posts: Post[] }> {
-        await mockDelay(150);
-        const stored = readStoredPosts();
-        const merged = [...stored, ...seedPosts];
-        return { posts: merged };
+        await mockDelay(300);
+        return { posts: seedPosts };
     },
     async getPost(id: string): Promise<{ post: Post } | { error: string }> {
-        await mockDelay(120);
-        const all = [...readStoredPosts(), ...seedPosts];
-        const post = all.find(p => p.id === id);
+        await mockDelay(200);
+        const post = seedPosts.find(p => p.id === id);
         if (!post) return { error: 'Not found' };
         return { post };
     },
-    async createPost(post: Post): Promise<{ ok: true }> {
-        await mockDelay(100);
-        const existing = readStoredPosts();
-        writeStoredPosts([post, ...existing]);
-        return { ok: true };
-    }
 };
 

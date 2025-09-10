@@ -36,12 +36,12 @@ const Navbar = () => {
             >
               Our Programs
             </a>
-            <a
-              href="#"
+            <Link
+              to="/success"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
               Success Stories
-            </a>
+            </Link>
             <Link
               to="/blog"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -95,12 +95,12 @@ const Navbar = () => {
               >
                 GALLERY
               </a>
-              <Link
-                to="/blog"
+              <a
+                href="#"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
-                BLOG
-              </Link>
+                NEWS
+              </a>
               <div className="flex justify-center px-3 py-2 border-t border-gray-200 mt-2 pt-4">
                 <button className="text-white px-4 py-2 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg" style={{ backgroundColor: '#0a528e' }}>
                   Donate Now ❤️
