@@ -70,6 +70,31 @@ If you’d like to nominate a student or partner with us, please reach out via o
   },
 ];
 
+// Example stories
+let seedStories = [
+  {
+    id: "1",
+    title: "Rahat's Journey",
+    studentName: "Rahat",
+    age: 16,
+    location: "Dhaka, Bangladesh",
+    story: "Abandoned by his family, now a bright student supported by scholarships.",
+    image: "/Rahat.png",
+    outcome: "Enrolled in secondary school, dreams of becoming a teacher."
+  },
+  {
+    id: "2",
+    title: "Anita & Boishakhi’s Transformation",
+    studentName: "Anita & Boishakhi Khatun",
+    age: 17,
+    location: "Rangpur, Bangladesh",
+    story: "Bright minds struggling to shine, empowered through education programs.",
+    image: "/Boishakhi.png",
+    outcome: "Both girls are continuing higher education with community support."
+  }
+];
+
+
 // Routes
 
 // GET all posts
@@ -112,6 +137,39 @@ app.post("/post", (req, res) => {
     seedPosts.push(newPost);
   
     res.status(201).json({ message: "Post created successfully", post: newPost });
+  });
+
+  app.get('/stories', (req, res) => {
+    res.json(seedStories);
+  })
+
+  app.get('/story/:id', (req,res) => {
+    const story = seedStories.find((s) => s.id === req.params.id);
+    if (story) res.json(story);
+    else res.status(404).json ({ error: 'Story not found'});
+  });
+
+  app.post('/stories', (req, res) => {
+    const { title, studentName, age, location, story, image, outcome } = req.body;
+
+    if (!title || !studentName || !age || !story || !outcome) {
+      return res.status(400).json({ error: 'Missing required fields'});
+    }
+
+    const newStory = {
+      id: (seedStories.length + 1).toString(),
+      title,
+      studentName,
+      age,
+      location,
+      story,
+      image,
+      outcome,
+    };
+
+    seedStories.push(newStory);
+
+    res.status (201).json({ message: 'Story created successfully', story: newStory});
   });
   
 // Start server

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Highlights = () => {
     const initiatives = [
         {
@@ -78,9 +80,9 @@ const Highlights = () => {
 
 
 
-                {/* Initiatives Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {initiatives.map((initiative) => (
+                {/* Initiatives Grid - Show only first 3 */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    {initiatives.slice(0, 3).map((initiative) => (
                         <div key={initiative.id} className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
                             {/* Image Section */}
                             <div className="relative h-48 overflow-hidden">
@@ -124,6 +126,16 @@ const Highlights = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* See More Button */}
+                <div className="text-center">
+                    <Link to="/programs" className="text-white px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 comfortaa-medium inline-flex items-center group" style={{ backgroundColor: '#0a528e' }}>
+                        See All Programs
+                        <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </Link>
                 </div>
 
 

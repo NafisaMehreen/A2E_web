@@ -30,12 +30,12 @@ const Navbar = () => {
             >
               About Us
             </Link>
-            <a
-              href="#"
+            <Link
+              to="/programs"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
             >
               Our Programs
-            </a>
+            </Link>
             <Link
               to="/success"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -85,28 +85,32 @@ const Navbar = () => {
             <div className="flex flex-col space-y-2">
               <Link
                 to="/about"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 About Us
               </Link>
-              <a
-                href="#"
+              <Link
+                to="/programs"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 Our Programs
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/success"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 Success Stories
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/blog"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
-                Blogs
-              </a>
+                Blog
+              </Link>
               <div className="flex justify-center px-3 py-2 border-t border-gray-200 mt-2 pt-4">
                 <button className="text-white px-4 py-2 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg" style={{ backgroundColor: '#0a528e' }}>
                   Donate Now ❤️

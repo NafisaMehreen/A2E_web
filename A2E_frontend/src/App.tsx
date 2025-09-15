@@ -6,6 +6,7 @@ import BlogDetail from './routes/BlogDetail'
 import Admin from './routes/Admin'
 import About from './routes/About'
 import Success from './routes/Success'
+import Programs from './routes/Programs'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path="/admin" element={<Admin />} />
       <Route path="/about" element={<About />} />
       <Route path="/success" element={<Success />} />
+      <Route path="/programs" element={<Programs />} />
     </Routes>
   )
 }
