@@ -1,4 +1,3 @@
-
 import Navbar from './components/Navbar';
 import Mission from './components/Mission';
 import AboutUs from './components/AboutUs';

@@ -9,17 +9,11 @@ const stories = [
     image: '/Rahat.png'
   },
   {
-    id: 'haseena',
-    name: 'Haseena',
-    tagline: 'She convinced her father to cancel the marriage.',
-    image: '/ht2.jpg'
-  },
-  {
-    id: 'khushi',
-    name: 'Khushi',
-    tagline: 'From factory work to dreaming of becoming a doctor.',
-    image: '/ht3.jpg'
-  },
+    id: 'Anita',
+    name: 'Anita & Boishakhi Khatun',
+    tagline: 'Bright minds struggling to shine, Empowered through education',
+    image: '/Boishakhi.png'
+  }
   
 ];
 

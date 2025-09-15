@@ -71,7 +71,7 @@ const HighlightsSection = () => {
                 {/* View More Button */}
                 <div className="text-center">
                     <button className="text-white px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 comfortaa-medium inline-flex items-center group" style={{ backgroundColor: '#0a528e' }}>
-                        View More Stories
+                        View More Stories 
                         <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>

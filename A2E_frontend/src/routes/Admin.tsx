@@ -43,7 +43,7 @@ export default function AdminForm() {
         throw new Error(data.error || "Failed to create post");
       }
 
-      const data = await res.json();
+      await res.json();
       alert("Post created successfully!");
       navigate("/posts");
     } catch (err: any) {
