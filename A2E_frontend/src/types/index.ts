@@ -1,3 +1,4 @@
+// Post interface for blog posts
 export interface Post {
   _id: string;
   id: string;
@@ -10,4 +11,7 @@ export interface Post {
   createdAt: string;
   updatedAt: string;
 }
+
+// Re-export for convenience
+export type { Post as BlogPost };
 
