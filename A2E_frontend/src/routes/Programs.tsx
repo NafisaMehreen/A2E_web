@@ -16,7 +16,7 @@ const Programs = () => {
             features: [
                 "Comprehensive living assistance",
                 "Nutritious daily meals",
-                "Educational materials and supplies",
+                "Educational mater`ials and supplies",
                 "Health and wellness support",
                 "Family counseling services"
             ],
