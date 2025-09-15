@@ -11,8 +11,8 @@ const BlogDetail = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
-    const BASE_URL = 'http://localhost:3000';
-    const API_URL = `${BASE_URL}/post`;
+    // const BASE_URL = 'http://localhost:3000';
+    const API_URL = `${import.meta.env.VITE_BASE_URL}/post`;
 
     
     useEffect(() => {
