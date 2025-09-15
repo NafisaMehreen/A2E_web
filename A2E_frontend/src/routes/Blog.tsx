@@ -14,22 +14,22 @@ const Blog = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-          try {
-            // Call your backend API
-            const res = await fetch(API_URL);
-            if (!res.ok) throw new Error("Failed to fetch posts");
-    
-            const data: Post[] = await res.json();
-            setPosts(data);
-          } catch (err: any) {
-            setError(err.message || "Unexpected error");
-          } finally {
-            setLoading(false);
-          }
+            try {
+                // Call your backend API
+                const res = await fetch(API_URL);
+                if (!res.ok) throw new Error("Failed to fetch posts");
+
+                const data: Post[] = await res.json();
+                setPosts(data);
+            } catch (err: any) {
+                setError(err.message || "Unexpected error");
+            } finally {
+                setLoading(false);
+            }
         };
-    
+
         fetchPosts();
-      }, []);
+    }, []);
 
     return (
         <>
