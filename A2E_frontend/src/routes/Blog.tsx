@@ -9,8 +9,11 @@ const Blog = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
-    const BASE_URL = 'http://localhost:3000';
-    const API_URL = `${BASE_URL}/posts`;
+    // const BASE_URL = 'http://localhost:3000';
+    const API_URL = `${import.meta.env.VITE_BASE_URL}/posts`;
+
+    // console.log(import.meta.env.VITE_BASE_URL);
+
 
     useEffect(() => {
         const fetchPosts = async () => {

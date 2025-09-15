@@ -16,8 +16,8 @@ const BlogForm = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const BASE_URL = "http://localhost:3000";
-  const API_URL = `${BASE_URL}/post`;
+  // const BASE_URL = "http://localhost:3000";
+  const API_URL = `${import.meta.env.VITE_BASE_URL}/post`;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -160,6 +160,7 @@ const StoriesForm = () => {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const API_URL = `${import.meta.env.VITE_BASE_URL}`
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -173,7 +174,7 @@ const StoriesForm = () => {
 
     try {
       // Replace with your stories API endpoint
-      const res = await fetch("http://localhost:3000/stories", {
+      const res = await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -304,6 +305,7 @@ const ProgramsForm = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
+  const API_URL = `${import.meta.env.VITE_BASE_URL}`
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -312,7 +314,7 @@ const ProgramsForm = () => {
 
     try {
       // Replace with your programs API endpoint
-      const res = await fetch("http://localhost:3000/programs", {
+      const res = await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

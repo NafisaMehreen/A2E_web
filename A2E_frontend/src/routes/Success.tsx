@@ -19,8 +19,8 @@ export default function Success() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const BASE_URL = "http://localhost:3000";
-  const API_URL = `${BASE_URL}/stories`;
+  // const BASE_URL = "http://localhost:3000";
+  const API_URL = `${import.meta.env.VITE_BASE_URL}/stories`;
 
   useEffect(() => {
     const fetchStories = async () => {
