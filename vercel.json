@@ -1,5 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "outputDirectory": "A2E_frontend/dist",
   "installCommand": "npm install"
 }
