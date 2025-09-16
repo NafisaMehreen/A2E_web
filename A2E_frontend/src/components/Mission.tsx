@@ -22,9 +22,9 @@ const MissionsSection = () => {
                                 One World, One Mission
                             </h2>
                             <p className="text-gray-600 text-lg leading-relaxed comfortaa-regular">
-                                Education is more than just books and classrooms; it&apos;s the foundation for dignity, 
-                                opportunity, and growth. Through our programs, students who once faced the possibility 
-                                of dropping out are now equipped to dream bigger, work harder, and contribute 
+                                Education is more than just books and classrooms; it&apos;s the foundation for dignity,
+                                opportunity, and growth. Through our programs, students who once faced the possibility
+                                of dropping out are now equipped to dream bigger, work harder, and contribute
                                 meaningfully to their communities.
                             </p>
                         </div>
@@ -35,7 +35,7 @@ const MissionsSection = () => {
                         {/* Interactive Image Grid */}
                         <div className="relative h-96 grid grid-cols-3 gap-4">
                             {/* Main Large Image */}
-                            <motion.div 
+                            <motion.div
                                 className="col-span-2 row-span-2 bg-gray-200 rounded-3xl overflow-hidden shadow-xl cursor-pointer relative"
                                 onHoverStart={() => setHoveredImage(1)}
                                 onHoverEnd={() => setHoveredImage(null)}
@@ -46,7 +46,7 @@ const MissionsSection = () => {
                                 }}
                                 transition={{ duration: 0.15, ease: "easeOut" }}
                             >
-                                <motion.img 
+                                <motion.img
                                     src="/service1.jpg"
                                     alt="Access to Education Service"
                                     className="w-full h-full object-cover"
@@ -58,7 +58,7 @@ const MissionsSection = () => {
                             </motion.div>
 
                             {/* Top Right - Secondary Image */}
-                            <motion.div 
+                            <motion.div
                                 className="bg-gray-200 rounded-2xl overflow-hidden shadow-lg cursor-pointer relative"
                                 onHoverStart={() => setHoveredImage(2)}
                                 onHoverEnd={() => setHoveredImage(null)}
@@ -69,7 +69,7 @@ const MissionsSection = () => {
                                 }}
                                 transition={{ duration: 0.15, ease: "easeOut" }}
                             >
-                                <motion.img 
+                                <motion.img
                                     src="/Usha.jpg"
                                     alt="Children studying"
                                     className="w-full h-full object-cover"
@@ -81,7 +81,7 @@ const MissionsSection = () => {
                             </motion.div>
 
                             {/* Bottom Right - Third Image */}
-                            <motion.div 
+                            <motion.div
                                 className="bg-gray-200 rounded-2xl overflow-hidden shadow-lg cursor-pointer relative"
                                 onHoverStart={() => setHoveredImage(3)}
                                 onHoverEnd={() => setHoveredImage(null)}
@@ -92,7 +92,7 @@ const MissionsSection = () => {
                                 }}
                                 transition={{ duration: 0.15, ease: "easeOut" }}
                             >
-                                <motion.img 
+                                <motion.img
                                     src="/Chhayadol.jpg"
                                     alt="Educational support"
                                     className="w-full h-full object-cover"

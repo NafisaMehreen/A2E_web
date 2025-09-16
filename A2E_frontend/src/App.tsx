@@ -7,19 +7,23 @@ import Admin from './routes/Admin'
 import About from './routes/About'
 import Success from './routes/Success'
 import Programs from './routes/Programs'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/blog/:id" element={<BlogDetail />} />
-      <Route path="/admin" element={<Admin />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/success" element={<Success />} />
-      <Route path="/programs" element={<Programs />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/programs" element={<Programs />} />
+      </Routes>
+    </>
   )
 }
 
