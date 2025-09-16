@@ -70,7 +70,7 @@ const MissionsSection = () => {
                                 transition={{ duration: 0.15, ease: "easeOut" }}
                             >
                                 <motion.img 
-                                    src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                                    src="/Usha.jpg"
                                     alt="Children studying"
                                     className="w-full h-full object-cover"
                                     animate={{
@@ -93,7 +93,7 @@ const MissionsSection = () => {
                                 transition={{ duration: 0.15, ease: "easeOut" }}
                             >
                                 <motion.img 
-                                    src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                                    src="/Chhayadol.jpg"
                                     alt="Educational support"
                                     className="w-full h-full object-cover"
                                     animate={{
